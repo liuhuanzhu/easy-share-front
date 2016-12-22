@@ -15,6 +15,6 @@ export default {
     }
 }
 </script>
-<style>
-  @import '~mobi.css';
+<style lang="scss">
+  @import '~mobi.css/src/mobi';
 </style>
