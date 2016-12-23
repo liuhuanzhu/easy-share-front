@@ -1,7 +1,8 @@
 
 @font-face {font-family: "iconfont";
-  src: url('../fonts/iconfont.ttf') format('truetype')
+  src:url('../fonts/iconfont.ttf') format('truetype')
 }
+
 .iconfont {
   font-family:"iconfont" !important;
   font-size:16px;
@@ -9,6 +10,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .icon-i-car:before { content: "\e600"; }
 
 .icon-i-phone:before { content: "\e737"; }
@@ -30,6 +32,8 @@
 .icon-i-my:before { content: "\e62a"; }
 
 .icon-i-shop:before { content: "\e645"; }
+
+.icon-i-arrow:before { content: "\e61b"; }
 
 .icon-i-select:before { content: "\e71a"; }
 

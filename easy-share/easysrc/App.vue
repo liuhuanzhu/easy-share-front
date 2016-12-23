@@ -2,10 +2,12 @@
   <div id="app">
     <router-view></router-view>
     <v-footer></v-footer>
+    <v-sort></v-sort>
   </div>
 </template>
 <script>
 import vFooter from './components/vFooter.vue'
+import vSort from './views/buy/vSort.vue'
 export default {
     data(){
       return{
@@ -16,7 +18,7 @@ export default {
       console.log(1212);
     },
     components:{
-      vFooter
+      vFooter,vSort
     }
 }
 </script>

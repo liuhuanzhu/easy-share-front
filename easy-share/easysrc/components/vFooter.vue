@@ -9,16 +9,15 @@
 </template>
 <style  lang="less">
 	@import '../assets/less/common.less';
+	.active{
+		color: @active;
+	}
 	.footer_li-container{
 		height: 1.28rem;font-size:@size;
 	}
 	.footer-icon{
 		font-size: 0.48rem;line-height: 1.4;
 		width: 100%;text-align: center;
-	}
-	.footer-link{
-		display: inline-block;
-		width: 100%;
 	}
 </style>
 <script type="text/javascript">
