@@ -1,26 +1,10 @@
 <template>
-  <div id="app">
+  <div id="app" class="container">
     <router-view></router-view>
-    <v-footer></v-footer>
-    <v-sort></v-sort>
   </div>
 </template>
 <script>
-import vFooter from './components/vFooter.vue'
-import vSort from './views/buy/vSort.vue'
-export default {
-    data(){
-      return{
-        
-      }
-    },
-    created(){
-      console.log(1212);
-    },
-    components:{
-      vFooter,vSort
-    }
-}
+export default {}
 </script>
 <style lang="scss">
   @import './assets/css/common.css';
@@ -33,5 +17,7 @@ export default {
     top: 0;right: 0;left: 0;bottom: 0;width: 100%;
     background-color: @bgColor;
     color: @color;
+    font-size:@size;
+    padding: 0;
   }
 </style>

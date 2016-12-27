@@ -12,6 +12,9 @@
 	.active{
 		color: @active;
 	}
+	.footer{
+		border-top: 1px solid @borderColor;
+	}
 	.footer_li-container{
 		height: 1.28rem;font-size:@size;
 	}

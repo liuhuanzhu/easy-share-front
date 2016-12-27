@@ -11,7 +11,7 @@
 	.sort_li-container{
 		position: relative;
 		height: 1.2rem;
-		font-size: @size;
+		font-size: @size14;
 	}
 	.iconfont{
 		font-size:0.27rem;
