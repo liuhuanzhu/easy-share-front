@@ -1,13 +1,25 @@
 <template>
   <div id="app" class="container">
     <router-view></router-view>
+    <v-loadding v-show="loadding"></v-loadding>
   </div>
 </template>
 <script>
-export default {}
+   import vLoadding from './components/vLoadding.vue'
+export default {
+    data(){
+      return {
+        loadding:false
+      }
+    },
+    components:{
+      vLoadding
+    }
+}
 </script>
 <style lang="scss">
   @import './assets/css/common.css';
+  @import './assets/css/animate.css';
   @import '~mobi.css/src/mobi';
 </style>
 <style lang="less">

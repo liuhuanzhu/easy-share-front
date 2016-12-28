@@ -52,6 +52,7 @@
 	import vPrice from '../../components/vPrice.vue'
 	import vShare from '../../components/vShare.vue'
 	export default{
+		name:"vProduct",
 		props:{
 			item:{
 				type:Object

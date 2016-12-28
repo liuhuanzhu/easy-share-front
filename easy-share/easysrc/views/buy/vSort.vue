@@ -1,6 +1,6 @@
 <template>
-	<ul class="flex-middle">
-		<li v-for="item in items" class="unit flex-center sort_li-container flex-middle">
+	<ul class="flex-middle sort_ul">
+		<li v-for="item in items" class="unit flex-center sort_li-container flex-middle" @click="sortClick">
 			<span>{{item.link}}</span>
 			<i v-if="item.sort" class="iconfont icon-i-arrow"></i>
 		</li>
@@ -8,6 +8,9 @@
 </template>
 <style lang="less" scoped>
 	@import '../../assets/less/common.less';
+	.sort_ul{
+		border-bottom:1px solid @borderColor;
+	}
 	.sort_li-container{
 		position: relative;
 		height: 1.2rem;
@@ -29,6 +32,11 @@
 					{link:"新品",sort:true},
 					{link:"价格",sort:true}
 				]
+			}
+		},
+		methods:{
+			sortClick(){
+				console.log(this.$store);
 			}
 		}
 	}

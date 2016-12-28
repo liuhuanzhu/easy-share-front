@@ -13,6 +13,7 @@
 		color: @active;
 	}
 	.footer{
+		position:absolute;width:100%;bottom:0;left:0;
 		border-top: 1px solid @borderColor;
 	}
 	.footer_li-container{

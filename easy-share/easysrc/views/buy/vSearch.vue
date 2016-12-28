@@ -1,5 +1,5 @@
 <template>
-	<div class="flex-left search-container">
+	<div class="search-container flex-middle">
 		<input type="text" class="unit search_input" placeholder="请输入您要搜索的商品" /><a href="#" class="iconfont icon-i-search  unit-0"></a>
 	</div>
 </template>
@@ -7,7 +7,8 @@
 	@import '../../assets/less/common.less';
 	.search-container{
 		.plr;
-		height:1rem;
+		background-color:#fff;
+		height:1.2rem;
 	}
 	.search_input{
 		height:0.96rem;border-radius: 0.21rem;padding-left: 0.13rem;background-color: #eeeeee;border: none;
