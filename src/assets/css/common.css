@@ -1,0 +1,20 @@
+@import './iconfont.css';
+@import './animate.min.css';
+
+a:hover,a:active{
+	text-decoration: none;
+}
+h2{
+	font-size: 0.37rem;margin: 0 0;
+}
+/**
+ * 价格
+ */
+.price:before{
+	content: "￥";
+	font-family: "Helvetica Neue", Helvetica, STHeiTi;
+	margin-right: 0.05rem;
+	vertical-align: bottom;
+	font-size:100%;
+}
+

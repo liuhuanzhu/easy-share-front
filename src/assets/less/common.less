@@ -1,0 +1,53 @@
+
+/*默认背景颜色*/
+@bgColor:#f9f9f9;
+/*默认字体颜色*/
+@color:#303030;
+/**active*/
+@active:#ff8e04;
+/**light 颜色*/
+@lightColor:#999999;
+/*默认字体大小**/
+@size:0.32rem;
+@size14:0.37rem;
+@size16:0.43rem;
+
+
+@radius:0.13rem;
+
+@borderColor:#d7d7d7;
+.plr(@pl:0.27rem,@pr:0){
+	padding: @pr @pl;
+}
+.transformCenter(){
+	position:absolute;
+	top:50%;left:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);
+}
+
+.tr{
+	text-align: right;
+}
+.block{
+	display:block;
+}
+.align_r{
+	align-self:flex-end;
+}
+.f14{
+	font-size:0.37rem;
+}
+.f16{
+	font-size:0.43rem;
+}
+
+.btn-max{
+	position:absolute;
+	bottom:0.27rem;
+	left:0.4rem;right:0.4rem;
+	text-align:center;
+	background-color:@active;
+	font-size:@size14;
+	color: #fff;
+	border-radius:@radius; 
+	height:1.07rem;line-height: 1.07rem;
+}
