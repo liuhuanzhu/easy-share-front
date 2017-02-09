@@ -31,11 +31,15 @@ const routes=[
 		name:"blance",
 		path:"/blance",
 		component:(resolve)=>require(['./page/blance/index.vue'],resolve)
+	},
+	{
+		name:"address",
+		path:"/address",
+		component:(resolve)=>require(['./page/address/index.vue'],resolve)
 	}
 ]
 
 const router=new Router({
-	
 	routes
 })
 

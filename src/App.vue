@@ -4,7 +4,6 @@
         name="slide"
         enter-active-class="animated slideInLeft"
         leave-active-class="animated slideOutRight"
-        
       >
         <router-view class="page"></router-view>
       </transition>

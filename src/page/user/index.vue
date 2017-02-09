@@ -22,9 +22,9 @@
 			<span class="unit">我的余额</span>
 			<span @click="goBlance">￥{{user.mbAmount}}<i class="iconfont icon-i-right"></i></span>
 		</div>
-		<div class="flex-middle card">
+		<div class="flex-middle card" @click="goAddress">
 			<span class="unit">收货地址</span>
-			<span class="iconfont icon-i-right"></span>
+			<span class="iconfont icon-i-right" ></span>
 		</div>
 		<v-footer :index="index"></v-footer>
 	</div>
@@ -111,6 +111,9 @@
 			},
 			goBlance(){
 				this.$router.push("blance");
+			},
+			goAddress(){
+				this.$router.push("address");
 			}
 		},
 		beforeRouteEnter(to,from,next){

@@ -30,6 +30,9 @@
 				items:[]
 			}
 		},
+		created(){
+
+		},
 		methods:{
 			getData(){
 				var url=API.products;
@@ -45,21 +48,18 @@
 			}
 		},
 		beforeRouteEnter(to,from,next){
-			next((vm)=>{
-				console.log("home beforeRouteEnter");
-				console.log(vm);
-			})
-			//var url=API.products;
-			// axios.get(url)
-			//   .then(function (response) {
-			//     console.log(response);
-			//     next((vm)=>{
-			//     	vm.items=response.data.data.list;
-			//     });
-			//   })
-			//   .catch(function (error) {
-			//     console.log(error);
-			//   });
+			
+			var url=API.products;
+			axios.get(url)
+			  .then(function (response) {
+			    console.log(response);
+			    next((vm)=>{
+			    	vm.items=response.data.data.list;
+			    });
+			  })
+			  .catch(function (error) {
+			    console.log(error);
+			  });
 		},
 		beforeRouteLeave(to,from,next){
 			console.log("home beforeRouteLeave");
